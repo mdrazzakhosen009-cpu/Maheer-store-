@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAHEER STORE</title>
+<meta name="description" content="MAHEER STORE — প্রিমিয়াম স্কিন কেয়ার পণ্য">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar"><div>🚚 সারা বাংলাদেশে হোম ডেলিভারি</div><div>♡ MAHEER STORE-এ আপনাকে স্বাগতম ♡</div><div>💬 যেকোনো তথ্যের জন্য এজেন্টের সাথে কথা বলুন</div></div>
+<header class="header">
+  <div class="wrap main-head">
+    <button class="hamb" id="hamb" aria-label="মেনু">☰</button>
+    <a class="brand" href="#home"><span class="brand-icon">✦</span><span><strong>MAHEER STORE</strong><small data-i18n="tagline">প্রিমিয়াম স্কিন কেয়ার</small></span></a>
+    <div class="search"><input id="search" data-i18n-placeholder="search" placeholder="পণ্য খুঁজুন..."><button id="searchBtn" aria-label="খুঁজুন">⌕</button></div>
+    <div class="head-actions">
+      <button onclick="scrollToId('contact')"><span class="ico">♧</span><small data-i18n="support">সহায়তা</small></button>
+      <button onclick="openCart()"><span class="ico">♡</span><small data-i18n="cart">কার্ট</small><b id="cartCount">0</b></button>
+    </div>
+  </div>
+  <nav id="nav" class="wrap nav">
+    <a href="#home" data-i18n="home">হোম</a><a href="#products" data-i18n="products">সব পণ্য</a><a href="#products" data-i18n="brands">ব্র্যান্ড</a><a href="#products" data-i18n="offers">অফার</a><a href="#products" data-i18n="new">নতুন আগমন</a><a href="#about" data-i18n="about">তথ্য</a><a href="#contact" data-i18n="contact">এজেন্টের সাথে যোগাযোগ</a>
+  </nav>
+</header>
+<main id="home">
+<section class="hero wrap">
+  <div class="hero-copy"><div class="eyebrow" data-i18n="eyebrow">আপনার ত্বকের যত্নে</div><h1 data-i18n="heroTitle">সুন্দর ত্বকের জন্য<br><em>MAHEER STORE</em></h1><p data-i18n="heroText">বাছাই করা স্কিন কেয়ার পণ্য, যত্নের সাথে আপনার জন্য।</p><button class="pink-btn" onclick="scrollToId('products')" data-i18n="shopNow">এখনই শপ করুন →</button></div>
+  <div class="hero-art"><div class="orb"></div><div class="bottle bottle-a"><span></span><b>MAHEER</b><small>সিরাম</small></div><div class="bottle bottle-b"><span></span><b>MAHEER</b><small>ময়েশ্চারাইজার</small></div><div class="jar"><div></div><b>MAHEER</b><small>স্কিন কেয়ার</small></div><div class="leaf l1">❧</div><div class="leaf l2">❧</div><div class="petal p1">✿</div><div class="petal p2">✿</div></div>
+</section>
+<section class="benefits wrap"><div><i>🚚</i><span><b data-i18n="b1">সারা বাংলাদেশে</b><small data-i18n="b1s">হোম ডেলিভারি</small></span></div><div><i>♢</i><span><b data-i18n="b2">১০০% অরিজিনাল</b><small data-i18n="b2s">নির্বাচিত পণ্য</small></span></div><div><i>♧</i><span><b data-i18n="b3">এজেন্ট সাপোর্ট</b><small data-i18n="b3s">২৪/৭ সহায়তা</small></span></div><div><i>↩</i><span><b data-i18n="b4">সহজ রিটার্ন</b><small data-i18n="b4s">সহজ রিটার্ন নীতি</small></span></div></section>
+<section class="section wrap" id="products"><div class="section-head"><div><div class="eyebrow" data-i18n="collection">বাছাই করা সংগ্রহ</div><h2 data-i18n="featured">জনপ্রিয় পণ্য</h2><p class="section-sub">আপনার দৈনন্দিন ত্বকের যত্নের জন্য পছন্দের পণ্য</p></div><button class="outline" onclick="loadProducts()" data-i18n="viewAll">সব দেখুন</button></div><div class="chips" id="chips"></div><div class="grid" id="productGrid"></div></section>
+<section class="about wrap" id="about"><div><div class="eyebrow">আমাদের স্টোর</div><h2>MAHEER STORE</h2><p id="aboutText">মাহীর স্টোরে আপনাদের স্বাগতম। আমাদের এখানে সব ধরনের স্কিন কেয়ার প্রোডাক্ট বিক্রি করা হয়। যে কোনো ধরনের তথ্যের জন্য এআই-এর সাথে নয়, এজেন্টের সাথে যোগাযোগ করুন।</p></div><div class="about-seal"><span>✦</span><b>ত্বকের যত্নে<br>আপনার বিশ্বস্ত স্টোর</b></div></section>
+<section class="track wrap" id="track"><div><div class="eyebrow" data-i18n="trackLabel">অর্ডার ট্র্যাকিং</div><h2 data-i18n="trackTitle">আপনার অর্ডারের অবস্থা দেখুন</h2></div><div class="track-box"><input id="trackInput" placeholder="অর্ডার নম্বর লিখুন"><button onclick="trackOrder()" data-i18n="trackBtn">ট্র্যাক করুন</button><div id="trackResult"></div></div></section>
+<section class="contact wrap" id="contact"><div><div class="eyebrow" data-i18n="contactLabel">যোগাযোগ</div><h2 data-i18n="contactTitle">সহায়তা দরকার?</h2><p data-i18n="contactText">যে কোনো তথ্যের জন্য এজেন্টের সাথে সরাসরি যোগাযোগ করুন।</p></div><button class="agent-btn" onclick="openAgents()">♧ <span data-i18n="agentBtn">এজেন্টের সাথে যোগাযোগ</span></button></section>
+</main>
+<footer><div class="wrap footer-top"><div><div class="footer-brand">MAHEER STORE</div><p id="footerAbout">মাহীর স্টোরে আপনাদের স্বাগতম।</p></div><div class="socials"><a id="wa" target="_blank" rel="noopener" aria-label="WhatsApp"><span>◉</span></a><a id="ig" target="_blank" rel="noopener" aria-label="Instagram"><span>◎</span></a><a id="tt" target="_blank" rel="noopener" aria-label="TikTok"><span>♪</span></a><a id="fb" target="_blank" rel="noopener" aria-label="Facebook"><span>f</span></a></div></div><div class="footer-bottom"><span>© <span id="year"></span> MAHEER STORE</span><span>সর্বস্বত্ব সংরক্ষিত</span></div></footer>
+<div class="floating"><button class="agent-float" onclick="openAgents()" aria-label="এজেন্ট">♧</button><button class="ai-float" onclick="openChat()" aria-label="এআই সহায়তা">✦</button></div>
+<div class="modal" id="cartModal"><div class="modal-card"><button class="close" onclick="closeModal('cartModal')">×</button><h2 data-i18n="cartTitle">আপনার কার্ট</h2><div id="cartItems"></div><div class="cart-total"><span data-i18n="total">মোট</span><b id="cartTotal">৳0</b></div><button class="pink-btn full" onclick="checkout()" data-i18n="checkout">অর্ডার করুন</button></div></div>
+<div class="modal" id="orderModal"><div class="modal-card"><button class="close" onclick="closeModal('orderModal')">×</button><h2 data-i18n="orderTitle">অর্ডার তথ্য</h2><form id="orderForm"><input name="customer_name" required placeholder="আপনার নাম"><input name="phone" required placeholder="মোবাইল নম্বর"><textarea name="address" required placeholder="ডেলিভারি ঠিকানা"></textarea><select name="payment_method"><option value="COD">ক্যাশ অন ডেলিভারি</option><option value="bKash">বিকাশ</option><option value="Nagad">নগদ</option><option value="Rocket">রকেট</option></select><input name="transaction_id" placeholder="অনলাইন পেমেন্ট হলে ট্রানজ্যাকশন আইডি"><button class="pink-btn full" type="submit" data-i18n="confirmOrder">অর্ডার নিশ্চিত করুন</button></form><div id="orderMsg"></div></div></div>
+<div class="modal" id="agentModal"><div class="modal-card"><button class="close" onclick="closeModal('agentModal')">×</button><h2 data-i18n="agentTitle">এজেন্টের সাথে যোগাযোগ</h2><div id="agentList"></div></div></div>
+<div class="modal" id="chatModal"><div class="modal-card chat"><button class="close" onclick="closeModal('chatModal')">×</button><h2>MAHEER STORE সহায়তা</h2><div id="chatLog"><div class="bubble bot">আসসালামু আলাইকুম ❤️ কীভাবে সাহায্য করতে পারি?</div></div><form id="chatForm"><input id="chatInput" placeholder="আপনার প্রশ্ন লিখুন..." autocomplete="off"><button>➤</button></form><small>তথ্যের জন্য এজেন্টের সাথে যোগাযোগ করতে পারেন।</small></div></div>
+<script src="app.js"></script>
+</body></html>
